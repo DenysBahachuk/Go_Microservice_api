@@ -16,7 +16,7 @@ import (
 var bindAddress = env.String("BIND_ADDRESS", false, ":9090", "Bind address for the server")
 
 func main() {
-
+	//os.Setenv("BIND_ADDRESS", ":8080")
 	env.Parse()
 
 	logger := log.New(os.Stdout, "products-api ", log.LstdFlags)
